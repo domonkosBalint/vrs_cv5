@@ -10,9 +10,11 @@
 
 #include "stm32l1xx.h"
 
-void adcIRQInit(void);
-void ledInit(void);
+void nvicInit(void);
+void gpioInit(void);
 void delay(int pocet);
 void adcInit(void);
+void ADC1_IRQHandler(void);
+void setFrek(uint16_t ADvalue);
 
 #endif /* VRS_CV5_H_ */
